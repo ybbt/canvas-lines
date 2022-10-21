@@ -47,7 +47,7 @@ export class Line {
             }
             const pointIntersectionCoord = this.#getPointIntersection(this.line, object.line);
             if (pointIntersectionCoord) {
-                const pointIntersection = new PointIntersection(pointIntersectionCoord, 10, 'red', 'black', 1);
+                const pointIntersection = new PointIntersection(pointIntersectionCoord, 5, 'red', 'black', 1);
 
                 pointsIntersection.push(pointIntersection);
             }
