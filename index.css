@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-canvas {
+    background-color: #eee;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.button-collapse {
+    border: solid red 1px;
+    color: red;
+}
