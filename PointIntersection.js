@@ -3,18 +3,20 @@ export class PointIntersection {
     #colorFill;
     #colorStroke;
     #outlineWidth;
+    #radius;
 
-    constructor(center, colorFill, colorStroke, outlineWidth) {
-        this.#setPointPath(center);
+    constructor(center, radius, colorFill, colorStroke, outlineWidth) {
         this.#colorFill = colorFill;
         this.#colorStroke = colorStroke;
         this.#outlineWidth = outlineWidth;
+        this.#radius = radius;
+        this.#setPointPath(center);
     }
 
     #setPointPath(center) {
         this.pointPath = new Path2D();
 
-        this.pointPath.arc(center.x, center.y, 5, 0, 2 * Math.PI);
+        this.pointPath.arc(center.x, center.y, this.#radius, 0, 2 * Math.PI);
     }
 
     draw(context) {
