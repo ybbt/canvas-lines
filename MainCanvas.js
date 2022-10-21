@@ -86,8 +86,6 @@ export class MainCanvas {
     }
 
     #onClickButton(e) {
-        this.#context.clearRect(0, 0, this.#canvas.width, this.#canvas.height);
-
         const animationTime = 3000;
         const fullAnimationStep = 120;
 
